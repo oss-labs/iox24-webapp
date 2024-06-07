@@ -5,7 +5,7 @@
       <CoreAppBanner />
       <v-main class="pa-0">
         <v-container fluid>
-          <v-row justify="center" align="center">
+          <v-row justify="center" align="start">
             <v-col md="11" lg="10">
               <v-slide-y-reverse-transition>
                 <div v-show="show">

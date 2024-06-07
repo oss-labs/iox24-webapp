@@ -55,7 +55,7 @@
             Occuring in the <br />
             near future
           </h1>
-          <p style="font-size: 90%;">
+          <p style="font-size: 90%">
             Google I/O Extended brings the excitement of Google I/O directly to
             your community. Join local I/O watch parties and meetups for the
             latest developer updates, technical talks from experts, networking,
@@ -73,7 +73,11 @@
                 v-for="(item, index) in stats"
                 :key="index"
               >
-                <v-img src="/assets/img/core/stats/stat-1.png" width="90%" class="d-flex">
+                <v-img
+                  src="/assets/img/core/stats/stat-1.png"
+                  width="90%"
+                  class="d-flex"
+                >
                   <div
                     class="mt-5 mt-md-12 mx-md-4 mx-1 text-center align-center"
                   >
@@ -158,9 +162,7 @@
               >
                 {{ item.question }}
               </v-expansion-panel-title>
-              <v-expansion-panel-text
-                >{{item.answer}}</v-expansion-panel-text
-              >
+              <v-expansion-panel-text>{{ item.answer }}</v-expansion-panel-text>
             </v-expansion-panel>
           </v-expansion-panels>
         </v-col>
@@ -207,12 +209,12 @@ const configDataSet = ref([]);
 let whatToExpect = ref([]);
 let stats = ref([]);
 
-faqDataSet.value = faqData
-configDataSet.value = configData
+faqDataSet.value = faqData;
+configDataSet.value = configData;
 screenWidth.value = width;
 
-stats.value = configDataSet.value.eventInfo.stats
-whatToExpect.value = configDataSet.value.eventInfo.whatToExpect
+stats.value = configDataSet.value.eventInfo.stats;
+whatToExpect.value = configDataSet.value.eventInfo.whatToExpect;
 </script>
 
 <style>

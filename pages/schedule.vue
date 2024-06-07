@@ -3,7 +3,7 @@
     <v-container fluid>
       <v-row justify="start" align="start">
         <v-col md="9" sm="9" cols="12" class="order-md-1 order-sm-1 order-2">
-          <h2 class="text-h2">Schedule</h2>
+          <h2 class="text-h4">Schedule</h2>
           <p>Learn about the Experts presenting at Google I/O Extended.</p>
           <br />
           <v-container fluid class="mt-3">

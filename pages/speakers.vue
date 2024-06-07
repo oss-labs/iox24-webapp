@@ -2,11 +2,11 @@
   <v-main class="pa-0">
     <v-container fluid>
       <v-row justify="start" align="start">
-        <v-col md="7">
-          <h2 class="text-h2">Meet the Speakers</h2>
+        <v-col md="7" cols="12">
+          <h2 class="text-h4">Meet the Speakers</h2>
           <p>Learn about the Experts presenting at Google I/O Extended.</p>
         </v-col>
-        <v-col md="5">
+        <v-col md="5" cols="12">
           <v-img
             src="/assets/img/core/speaker-page.png"
             lazy-src="/assets/img/core/speaker-page.png"
