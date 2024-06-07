@@ -1,20 +1,28 @@
 <template>
-  <v-main>
+  <v-main class="pa-0">
     <v-container fluid>
-      <v-row justify="center" align="center" class="mb-15">
-        <v-col md="8" cols="12" sm="7" class="order-md-1 order-sm-1 order-2">
-          <h1 class="text-h2">Google IO Extended</h1>
-          <p class="my-4">
+      <v-row class="d-flex">
+        <v-col
+          md="7"
+          cols="12"
+          sm="7"
+          class="order-md-1 order-sm-1 order-2 py-15"
+        >
+          <h3 class="text-h3 font-weight-medium">Google IO Extended</h3>
+          <p class="mb-4 mt-2">
             Google I/O Extended brings the excitement of Google I/O directly to
-            your community. Join local I/O watch parties and meetups for the
-            latest developer updates, technical talks from experts, networking,
-            and hands-on learning.
+            your community.
           </p>
 
-          <p><v-icon>mdi-calendar-month</v-icon> July 23, 2024</p>
-          <p><v-icon>mdi-map-legend</v-icon> Location</p>
+          <p>
+            <span class="mr-4"
+              ><v-icon>mdi-calendar-month</v-icon> July 23, 2024</span
+            >
+            <span><v-icon>mdi-map-legend</v-icon> Location</span>
+          </p>
+
           <v-btn
-            class="mt-4"
+            class="mt-4 mb-5"
             rounded
             variant="flat"
             color="primary"
@@ -22,10 +30,13 @@
             >Register Now</v-btn
           >
         </v-col>
-        <v-col md="4" cols="12" sm="5" class="order-md-2 order-sm-2 order-1">
-          <v-img
-            src="https://io.google/2024/app/images/io24-home-hero-phase4-2.svg"
-          ></v-img>
+        <v-col
+          md="5"
+          cols="12"
+          sm="5"
+          class="order-md-2 order-sm-2 order-1 mt-10 align-self-end pa-0"
+        >
+          <v-img width="200vh" src="/assets/img/core/hero.png"></v-img>
         </v-col>
       </v-row>
 
@@ -33,39 +44,63 @@
         justify="center"
         align="center"
         style="
-          border: 1.5px solid black;
+          border: 1px solid black;
           border-radius: 20px;
           background-color: #eeeeee;
         "
-        class="pa-3 mx-1 my-10"
+        class="pa-3 mx-1"
       >
-        <v-col>
-          <h1>Occuring in the near future</h1>
-          <p>
-            Whether it be through technical talks delivered in local languages,
-            Q&As with local Google Developer Experts, or by simply meeting
-            fellow local tech enthusiasts, I/O Extended attendees learn about
-            how Google developer products can help them do what they do best -
-            develop.
+        <v-col md="4" cols="12">
+          <h1 class="text-h4 mb-3" style="line-height: 35px">
+            Occuring in the <br />
+            near future
+          </h1>
+          <p style="font-size: 90%;">
+            Google I/O Extended brings the excitement of Google I/O directly to
+            your community. Join local I/O watch parties and meetups for the
+            latest developer updates, technical talks from experts, networking,
+            and hands-on learning.
           </p>
-
-          <v-container fluid class="pa-0 mt-5">
+        </v-col>
+        <v-col md="8" cols="12">
+          <v-container fluid class="pa-0">
             <v-row>
-              <v-col md="2" lg="2" sm="2" cols="6" v-for="(item, index) in stats" :key="index">
-                <div
+              <v-col
+                md="3"
+                lg="3"
+                sm="2"
+                cols="6"
+                v-for="(item, index) in stats"
+                :key="index"
+              >
+                <v-img src="/assets/img/core/stats/stat-1.png" width="90%" class="d-flex">
+                  <div
+                    class="mt-5 mt-md-12 mx-md-4 mx-1 text-center align-center"
+                  >
+                    <!-- {{ screenWidth }} <br />
+                    {{ screenWidth > 450 ? '300%' : '30px' }} -->
+                    <p
+                      :style="{ fontSize: screenWidth > 450 ? '350%' : '200%' }"
+                    >
+                      {{ item.value }}
+                    </p>
+                    <p style="font-size: 90%">{{ item.name }}</p>
+                  </div>
+                </v-img>
+                <!-- <div
                   style="background-color: white; border-radius: 20px"
                   class="pa-4"
                 >
                   <h2>{{ item.value }}</h2>
                   <p style="font-size: 85%">{{ item.name }}</p>
-                </div>
+                </div> -->
               </v-col>
             </v-row>
           </v-container>
         </v-col>
       </v-row>
 
-      <v-row>
+      <v-row class="my-15 py-10 px-1">
         <v-col md="12">
           <h1 class="mb-5">What to Expect</h1>
           <v-container fluid class="pa-0">
@@ -82,7 +117,7 @@
                     style="
                       border-radius: 20px;
                       border-radius: 20px;
-                      border: 1.5px solid black;
+                      border: 1px solid black;
                     "
                     :src="item.img"
                   ></v-img>
@@ -95,7 +130,7 @@
         </v-col>
       </v-row>
 
-      <v-row class="">
+      <v-row class="px-1">
         <v-col md="10">
           <h3 class="text-h3">Frequently asked questions</h3>
           <p class="mb-4">Need Answers? Everything you need to know</p>
@@ -113,21 +148,18 @@
           >
             <!-- :style="{ borderBottom: i<3?'1px solid black':'', borderTop: i!=0?'1px solid black':'' }" -->
             <v-expansion-panel
-              v-for="i in 3"
-              :key="i"
-              :style="{ borderBottom: i != 3 ? '1px solid black' : '' }"
+              v-for="(item, index) in faqDataSet"
+              :key="index"
+              :style="{ borderBottom: index != 3 ? '1px solid black' : '' }"
             >
               <v-expansion-panel-title
                 expand-icon="mdi-menu-down"
                 style="background-color: #eeeeee"
               >
-                Item
+                {{ item.question }}
               </v-expansion-panel-title>
               <v-expansion-panel-text
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.</v-expansion-panel-text
+                >{{item.answer}}</v-expansion-panel-text
               >
             </v-expansion-panel>
           </v-expansion-panels>
@@ -163,8 +195,21 @@
 </template>
 
 <script setup>
+import { useDisplay } from "vuetify";
+import configData from "../assets/data/config.json";
+import faqData from "../assets/data/faq.json";
+
+const { width, mobile } = useDisplay();
+
+const screenWidth = ref(0);
+const faqDataSet = ref([]);
+const configDataSet = ref([]);
 let whatToExpect = ref([]);
 let stats = ref([]);
+
+faqDataSet.value = faqData
+configDataSet.value = configData
+screenWidth.value = width;
 
 stats = [
   {

@@ -2,12 +2,15 @@
   <NuxtLayout>
     <v-app>
       <CoreAppToolbar />
+      <CoreAppBanner />
       <v-main class="pa-0">
         <v-container fluid>
           <v-row justify="center" align="center">
             <v-col md="11" lg="10">
               <v-slide-y-reverse-transition>
-                <NuxtPage v-show="show" />
+                <div v-show="show">
+                  <NuxtPage />
+                </div>
               </v-slide-y-reverse-transition>
             </v-col>
           </v-row>
@@ -18,10 +21,13 @@
   </NuxtLayout>
 </template>
 
-<script setup>
-let show = ref(false);
-
-onBeforeUpdate(() => {
-  show.value = true; // <div>
-});
+<script>
+export default {
+  data: () => ({
+    show: false,
+  }),
+  created() {
+    this.show = true;
+  },
+};
 </script>

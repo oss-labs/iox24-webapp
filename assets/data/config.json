@@ -1,0 +1,32 @@
+{
+    "communityName": "GDG Baku",
+    "communityLocation": {
+        "country": "Azerbaijan",
+        "city": "Baku"
+    },
+    "communityDescription": "GDG Baku is an independent group; our activities and the opinions expressed here should in no way be linked to Google, the corporation.",
+    "communityLinks": {
+        "page": "https://gdg.community.dev/gdg-baku/",
+        "website": "https://gdgbaku.az/",
+        "instagram": "https://www.instagram.com/gdg.baku/",
+        "linkedin": "https://www.linkedin.com/company/gdgbaku/",
+        "youtube": "https://www.youtube.com/@gdgbaku"
+    },
+    "eventInfo": {
+        "name": "Google IO Extended 2024",
+        "date": "July 27, 2024",
+        "time": "9 AM - 5 PM IST",
+        "venue": {
+            "address": "Somewhere in the ocean",
+            "map_link": "https://maps.app.goo.gl/Cm6gXgpugNw74ow6A"
+        },
+        "registeration": {
+            "link": "https://gdgbaku.az/",
+            "end_date": "2024-07-15"
+        },
+        "description": {
+            "short": "Google I/O Extended brings the excitement of Google I/O directly to community. Join local I/O meetups for the latest developer updates, technical talks from experts, networking, and hands-on learning.",
+            "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        }
+    }
+}

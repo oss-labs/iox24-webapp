@@ -7,9 +7,9 @@
           <p>Learn about the Experts presenting at Google I/O Extended.</p>
         </v-col>
         <v-col md="4">
-          <v-img
-            src="https://io.google/2024/app/images/io24-speakers-hero.webp"
-          ></v-img>
+          <!-- <v-img
+            src="/assets/img/core/"
+          ></v-img> -->
         </v-col>
       </v-row>
 
