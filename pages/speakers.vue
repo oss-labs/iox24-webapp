@@ -1,15 +1,16 @@
 <template>
-  <v-main class="">
+  <v-main class="pa-0">
     <v-container fluid>
-      <v-row justify="center" align="center">
-        <v-col md="8">
+      <v-row justify="start" align="start">
+        <v-col md="7">
           <h2 class="text-h2">Meet the Speakers</h2>
           <p>Learn about the Experts presenting at Google I/O Extended.</p>
         </v-col>
-        <v-col md="4">
-          <!-- <v-img
-            src="/assets/img/core/"
-          ></v-img> -->
+        <v-col md="5">
+          <v-img
+            src="/assets/img/core/speaker-page.png"
+            lazy-src="/assets/img/core/speaker-page.png"
+          ></v-img>
         </v-col>
       </v-row>
 

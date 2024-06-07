@@ -100,7 +100,7 @@
         </v-col>
       </v-row>
 
-      <v-row class="my-15 py-10 px-1">
+      <v-row class="my-15 pt-10 px-1">
         <v-col md="12">
           <h1 class="mb-5">What to Expect</h1>
           <v-container fluid class="pa-0">
@@ -211,45 +211,8 @@ faqDataSet.value = faqData
 configDataSet.value = configData
 screenWidth.value = width;
 
-stats = [
-  {
-    name: "Speakers",
-    value: "23+",
-  },
-  {
-    name: "Participants",
-    value: "200+",
-  },
-  {
-    name: "Sessions",
-    value: "10+",
-  },
-  {
-    name: "Workshops",
-    value: "2+",
-  },
-];
-
-whatToExpect = [
-  {
-    title: "Explore",
-    description:
-      "Join technical sessions and Q&As to help you apply the latest announcements from Google I/O.",
-    img: "https://services.google.com/fh/files/events/ioconnectexplore.png",
-  },
-  {
-    title: "Learn",
-    description:
-      "Get hands-on with instructor-led workshops and check out the latest demos.  ",
-    img: "https://services.google.com/fh/files/events/ioconnectlearn.png",
-  },
-  {
-    title: "Connect",
-    description:
-      "Sign up to office hours and network with the people who build the technology you love. You can also expand your network and meet with other developers from India.",
-    img: "https://services.google.com/fh/files/events/ioconnectconnect.png",
-  },
-];
+stats.value = configDataSet.value.eventInfo.stats
+whatToExpect.value = configDataSet.value.eventInfo.whatToExpect
 </script>
 
 <style>

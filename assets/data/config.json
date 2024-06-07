@@ -27,6 +27,41 @@
         "description": {
             "short": "Google I/O Extended brings the excitement of Google I/O directly to community. Join local I/O meetups for the latest developer updates, technical talks from experts, networking, and hands-on learning.",
             "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        }
+        },
+        "stats": [
+            {
+                "name": "Speakers",
+                "value": "23+"
+            },
+            {
+                "name": "Participants",
+                "value": "200+"
+            },
+            {
+                "name": "Sessions",
+                "value": "10+"
+            },
+            {
+                "name": "Workshops",
+                "value": "2+"
+            }
+        ],
+        "whatToExpect": [
+            {
+                "title": "Explore",
+                "description": "Join technical sessions and Q&As to help you apply the latest announcements from Google I/O.",
+                "img": "https://services.google.com/fh/files/events/ioconnectexplore.png"
+            },
+            {
+                "title": "Learn",
+                "description": "Get hands-on with instructor-led workshops and check out the latest demos.",
+                "img": "https://services.google.com/fh/files/events/ioconnectlearn.png"
+            },
+            {
+                "title": "Connect",
+                "description": "Sign up to office hours and network with the people who build the technology you love. You can also expand your network and meet with other developers from India.",
+                "img": "https://services.google.com/fh/files/events/ioconnectconnect.png"
+            }
+        ]
     }
 }

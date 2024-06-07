@@ -1,0 +1,26 @@
+[
+    {
+        "time":"9:00 AM - 9:30 AM",
+        "timezone": "IST",
+        "title": "Welcome Keynote",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "time":"9:30 AM - 10:30 AM",
+        "timezone": "IST",
+        "title": "What's new in Web?",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "time":"10:30 AM - 11:30 AM",
+        "timezone": "IST",
+        "title": "Mobile App for with Gemini",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "time":"11:30 AM - 12:30 PM",
+        "timezone": "IST",
+        "title": "Google Cloud Vertex AI for Enterprise",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+]
