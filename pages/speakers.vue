@@ -15,19 +15,27 @@
       </v-row>
 
       <v-row>
-        <v-col md="2" v-for="(item, index) in speakersData" :key="index">
-            <CommonSpeakerCard :data="item"/>
+        <v-col md="7" sm="12" cols="12" class="cards">
+          <div v-for="(item, index) in speakersData" :key="index">
+            <CommonSpeakerCard :data="item" />
+          </div>
         </v-col>
       </v-row>
     </v-container>
   </v-main>
 </template>
-  
+
 <script setup>
-    import speakersData from "../assets/data/speakers.json";
-    const spData = ref([]);
-    spData.value = speakersData;
+import speakersData from "../assets/data/speakers.json";
+const spData = ref([]);
+spData.value = speakersData;
 </script>
-  
-  <style>
+
+<style>
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2px;
+}
 </style>

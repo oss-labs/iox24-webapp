@@ -28,10 +28,8 @@
     <v-spacer></v-spacer>
     <v-btn
       rounded
+      class="action_btn"
       :size="screenWidth < 400 ? 'x-small' : 'small'"
-      variant="flat"
-      color="primary"
-      prepend-icon="mdi-open-in-new"
       >Register Now</v-btn
     >
     <!-- {{ screenWidth }} -->
@@ -46,5 +44,11 @@ const screenWidth = ref(0);
 screenWidth.value = width;
 </script>
 
-<style>
+<style scoped>
+.action_btn {
+  background: linear-gradient(90deg, #faab31, #fcc731, #faab31 80%);
+  color: #000;
+  box-shadow: none;
+  border: 2px solid black;
+}
 </style>

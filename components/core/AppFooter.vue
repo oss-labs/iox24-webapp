@@ -2,6 +2,7 @@
   <v-main class="pa-0">
     <v-container
       fluid
+      class="footer"
       style="background-color: #202124; color: white !important"
     >
       <v-row>
@@ -16,7 +17,7 @@
             class="mb-0 mr-6"
             >Community Guidelines</a
           >
-          <br class="d-md-none">
+          <br class="d-md-none" />
           <a
             href="https://gdg.community.dev/participation-terms/"
             target="_blank"
@@ -25,15 +26,14 @@
             >Participations Terms</a
           >
         </v-col>
-        <v-col md="2" style="color: #9aa09e;">
+        <v-col md="2" style="color: #9aa09e">
           <a
             href="https://gdg.community.dev/participation-terms/"
             target="_blank"
-            style="color: #9aa09e; text-decoration: none;font-size: 80%;"
+            style="color: #9aa09e; text-decoration: none; font-size: 80%"
             class="mb-0"
             >Developed by Open Sources Labs</a
           >
-          
         </v-col>
       </v-row>
     </v-container>
@@ -60,4 +60,8 @@ export default {};
 </script>
 
 <style>
+.footer {
+  position: absolute;
+  bottom: 0;
+}
 </style>
