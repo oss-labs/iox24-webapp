@@ -171,12 +171,8 @@
         "
       >
         <v-col class="pa-0" style="border-radius: 20px">
-          <div class="mx-10 mt-15" style="position: absolute">
+          <div class="mx-10 mt-15">
             <h2 class="text-h3">See you at #IOExtended</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
-              laudantium reprehenderit nobis fugiat
-            </p>
           </div>
 
           <v-img
