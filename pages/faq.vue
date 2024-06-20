@@ -30,7 +30,9 @@
               >
                 {{ item.question }}
               </v-expansion-panel-title>
-              <v-expansion-panel-text>{{ item.answer }}</v-expansion-panel-text>
+              <v-expansion-panel-text  class="pa-3">
+                <div v-html="item.answer"></div>
+              </v-expansion-panel-text>
             </v-expansion-panel>
           </v-expansion-panels>
         </v-col>
