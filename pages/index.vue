@@ -21,14 +21,7 @@
             <span><v-icon>mdi-map-legend</v-icon> Location</span>
           </p>
 
-          <v-btn
-            class="mt-4 mb-5"
-            rounded
-            variant="flat"
-            color="primary"
-            prepend-icon="mdi-open-in-new"
-            >Register Now</v-btn
-          >
+          <v-btn class="mt-4 mb-5 action_btn" rounded>Register Now</v-btn>
         </v-col>
         <v-col
           md="5"
@@ -178,12 +171,8 @@
         "
       >
         <v-col class="pa-0" style="border-radius: 20px">
-          <div class="mx-10 mt-15" style="position: absolute">
+          <div class="mx-10 mt-15">
             <h2 class="text-h3">See you at #IOExtended</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
-              laudantium reprehenderit nobis fugiat
-            </p>
           </div>
 
           <v-img
@@ -217,5 +206,11 @@ stats.value = configDataSet.value.eventInfo.stats;
 whatToExpect.value = configDataSet.value.eventInfo.whatToExpect;
 </script>
 
-<style>
+<style scoped>
+.action_btn {
+  background: linear-gradient(90deg, #4285f4, #a16bcc, #ea4335 80%);
+  color: #000;
+  box-shadow: none;
+  border: 2px solid black;
+}
 </style>

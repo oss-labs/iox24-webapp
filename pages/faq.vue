@@ -38,12 +38,11 @@
     </v-container>
   </v-main>
 </template>
-      
+
 <script setup>
 import faqData from "../assets/data/faq.json";
 const faqDataSet = ref([]);
 faqDataSet.value = faqData;
 </script>
-      
-      <style>
-</style>
+
+<style></style>
