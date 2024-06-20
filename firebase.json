@@ -1,6 +1,7 @@
 {
   "hosting": {
     "public": ".output/public",
+    "site":"iox-website",
     "ignore": [
       "firebase.json",
       "**/.*",

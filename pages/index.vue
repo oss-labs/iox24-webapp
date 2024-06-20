@@ -39,7 +39,7 @@
                 new Date()
             "
             size="large"
-            :href="configData.eventInfo.registeration.link.length"
+            :href="configData.eventInfo.registeration.link"
             target="_blank"
             rounded
             >Register Now</v-btn
