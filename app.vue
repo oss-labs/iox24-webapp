@@ -2,8 +2,9 @@
   <NuxtLayout>
     <v-app>
       <CoreAppToolbar />
-      <CoreAppBanner />
+      <CoreAppDrawer/>
       <v-main class="pa-0">
+        <CoreAppBanner />
         <v-container fluid>
           <v-row justify="center" align="start">
             <v-col md="11" lg="10">

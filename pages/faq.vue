@@ -1,10 +1,10 @@
 <template>
-  <v-main class="bg-green pa-0 ma-0">
-    <v-container fluid class="bg-red">
+  <v-main class=" pa-0 ma-0">
+    <v-container fluid class="">
       <v-row justify="" align="start">
         <v-col md="9" sm="9" cols="12" class="order-md-1 order-sm-1 order-2">
-          <h2 class="text-h4">Frequently asked questions</h2>
-          <p>Need Answers? Everything you need to know</p>
+          <h2 class="text-h3">Frequently asked questions</h2>
+          <p class="mb-10">Need Answers? Everything you need to know</p>
 
           <v-expansion-panels
             class="mb-6"

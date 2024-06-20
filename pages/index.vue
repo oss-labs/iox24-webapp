@@ -1,6 +1,6 @@
 <template>
   <v-main class="pa-0">
-    <v-container fluid>
+    <v-container fluid class="px-0">
       <v-row class="d-flex">
         <v-col
           md="7"
@@ -8,7 +8,7 @@
           sm="7"
           class="order-md-1 order-sm-1 order-2 py-15"
         >
-          <h3 class="text-h3 font-weight-medium">Google IO Extended</h3>
+          <h3 class="text-h3 font-weight-medium">Google I/O Extended</h3>
           <p class="mb-4 mt-2">
             Google I/O Extended brings the excitement of Google I/O directly to
             your community.
@@ -44,7 +44,7 @@
         class="pa-3 mx-1"
       >
         <v-col md="4" cols="12">
-          <h1 class="text-h4 mb-3" style="line-height: 35px">
+          <h1 class="text-h3 mb-3" style="line-height: 45px">
             Occuring in the <br />
             near future
           </h1>
@@ -61,7 +61,7 @@
               <v-col
                 md="3"
                 lg="3"
-                sm="2"
+                sm="3"
                 cols="6"
                 v-for="(item, index) in stats"
                 :key="index"
@@ -74,8 +74,6 @@
                   <div
                     class="mt-5 mt-md-12 mx-md-4 mx-1 text-center align-center"
                   >
-                    <!-- {{ screenWidth }} <br />
-                    {{ screenWidth > 450 ? '300%' : '30px' }} -->
                     <p
                       :style="{ fontSize: screenWidth > 450 ? '350%' : '200%' }"
                     >
@@ -84,13 +82,6 @@
                     <p style="font-size: 90%">{{ item.name }}</p>
                   </div>
                 </v-img>
-                <!-- <div
-                  style="background-color: white; border-radius: 20px"
-                  class="pa-4"
-                >
-                  <h2>{{ item.value }}</h2>
-                  <p style="font-size: 85%">{{ item.name }}</p>
-                </div> -->
               </v-col>
             </v-row>
           </v-container>
@@ -99,13 +90,14 @@
 
       <v-row class="my-15 pt-10 px-1">
         <v-col md="12">
-          <h1 class="mb-5">What to Expect</h1>
+          <h1 class="mb-5 text-h4">What to Expect</h1>
           <v-container fluid class="pa-0">
             <v-row>
               <v-col
                 md="4"
                 sm="4"
                 cols="12"
+                class="mb-4"
                 v-for="(item, index) in whatToExpect"
                 :key="index"
               >
@@ -129,7 +121,7 @@
 
       <v-row class="px-1">
         <v-col md="10">
-          <h3 class="text-h3">Frequently asked questions</h3>
+          <h3 class="text-h4">Frequently asked questions</h3>
           <p class="mb-4">Need Answers? Everything you need to know</p>
           <v-expansion-panels
             class="mb-6"
@@ -164,15 +156,15 @@
       <v-row
         class="mt-10 mx-1 mb-10"
         style="
-          border: 1.5px solid black;
+          border: 1px solid black;
           border-radius: 20px;
           background-color: #eeeeee;
           overflow: hidden;
         "
       >
         <v-col class="pa-0" style="border-radius: 20px">
-          <div class="mx-10 mt-15">
-            <h2 class="text-h3">See you at #IOExtended</h2>
+          <div class="mx-8 mt-8 mx-md-15 mt-md-10">
+            <h2 class="text-h4">See you at #IOExtended</h2>
           </div>
 
           <v-img
@@ -209,8 +201,9 @@ whatToExpect.value = configDataSet.value.eventInfo.whatToExpect;
 <style scoped>
 .action_btn {
   background: linear-gradient(90deg, #4285f4, #a16bcc, #ea4335 80%);
-  color: #000;
+  color: white;
+  /* color: #000; */
   box-shadow: none;
-  border: 2px solid black;
+  border: 0px solid black;
 }
 </style>

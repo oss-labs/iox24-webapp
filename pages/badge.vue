@@ -1,36 +1,32 @@
-
-
 <template>
-  <v-main class="my-md-10 my-0 px-3">
+  <v-main class="pa-0">
     <v-container fluid>
       <!-- Mobile -->
       <v-row>
         <v-col md="12" lg="12" class="d-block d-sm-block d-md-none px-0">
-          <p class="google-font gdg-heading text-h4 mb-4">Badges</p>
+          <p class="text-h3 mb-4">Badges</p>
           <p class="my-0 mb-8 h1-subheading google-font">
-            Now that you are here, how about personalising your DevFest India
-            2024 profile? Upload an image and generate a personalised badge with
-            the DevFest India 2024 frame. Also share your image using
-            #DevFestIndia on different social platforms.
+            Upload an image and generate a personalised badge with the Google IO
+            Extended frame. Also share your image using #IOExtended on different
+            social platforms.
           </p>
         </v-col>
       </v-row>
       <!-- Mobile -->
 
       <!-- Desktop -->
-      <v-row class="mb-md-10">
+      <v-row class="mb-md-10" justify="center" align="center">
         <v-col
-          md="6"
-          class="order-md-1 order-sm-2 order-2 px-md-7 mt-3 px-0 mb-md-13"
+          md="7"
+          class="order-md-1 order-sm-2 order-2  mt-3 px-0 mb-md-13"
         >
           <div class="d-none d-sm-none d-md-block mb-10">
-            <p class="google-font gdg-heading text-h3 mb-4">Badges</p>
+            <p class="text-h3 mb-4">Badges</p>
 
             <p class="google-font" style="font-size: 18px">
-              Now that you are here, how about personalising your DevFest India
-              2024 profile? Upload an image and generate a personalised badge
-              with the DevFest India 2024 frame. Also share your image using
-              #DevFestIndia on different social platforms.
+              Upload an image and generate a personalised badge with the Google
+              IO Extended frame. Also share your image using #IOExtended on
+              different social platforms.
             </p>
           </div>
           <div class="input">
@@ -41,7 +37,7 @@
 
             <v-btn
               class="action_btn mt-4 mb-5"
-              large
+              size="large"
               @click="uploadImage()"
               rounded
               style="text-transform: capitalize"
@@ -96,16 +92,15 @@
           </p>
         </v-col>
         <v-col
-          md="6"
+          md="5"
           sm="12"
           cols="12"
           class="text-center py-md-10 py-5 order-md-2 order-sm-1 order-1"
           style="background: #eeeeee; border-radius: 18px"
         >
-          <canvas class=""></canvas>
-          <br /><br />
+          <canvas style="border-radius: 12px" class=""></canvas>
           <v-btn
-            class="pb-0 mb-0 action_download_btn"
+            class="pb-0 mb-0 action_download_btn mt-2"
             rounded
             id="download"
             @click="download()"
@@ -295,7 +290,7 @@ canvas {
   background: linear-gradient(90deg, #ffcb32, #34a853 80%);
   color: #000;
   box-shadow: none;
-  border: 2px solid black;
+  border: 0px solid black;
 }
 .action_download_btn {
   background: linear-gradient(90deg, #faab31, #fcc731, #faab31 80%);

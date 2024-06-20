@@ -1,0 +1,83 @@
+[
+    {
+      "id": "101",
+      "name": "Full Name",
+      "image": "abc.webp",
+      "social": {
+        "linkedin": "a",
+        "twitter": "b",
+        "github": "c",
+        "web": "d"
+      },
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.z",
+      "meta": {
+        "company": "Company",
+        "designation": "Designation"
+      }
+    },
+    {
+      "id": "102",
+      "name": "Full Name",
+      "image": "abc.webp",
+      "social": {
+        "linkedin": "a",
+        "twitter": "b",
+        "github": "c",
+        "web": "d"
+      },
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.z",
+      "meta": {
+        "company": "Company",
+        "designation": "Designation"
+      }
+    },
+    {
+      "id": "103",
+      "name": "Full Name",
+      "image": "abc.webp",
+      "social": {
+        "linkedin": "a",
+        "twitter": "b",
+        "github": "c",
+        "web": "d"
+      },
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.z",
+      "meta": {
+        "company": "Company",
+        "designation": "Designation"
+      }
+    },
+    {
+      "id": "104",
+      "name": "Full Name",
+      "image": "abc.webp",
+      "social": {
+        "linkedin": "a",
+        "twitter": "b",
+        "github": "c",
+        "web": "d"
+      },
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.z",
+      "meta": {
+        "company": "Company",
+        "designation": "Designation"
+      }
+    },
+    {
+      "id": "105",
+      "name": "Full Name",
+      "image": "abc.webp",
+      "social": {
+        "linkedin": "a",
+        "twitter": "b",
+        "github": "c",
+        "web": "d"
+      },
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.z",
+      "meta": {
+        "company": "Company",
+        "designation": "Designation"
+      }
+    }
+  ]
+  
