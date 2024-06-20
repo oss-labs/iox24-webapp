@@ -9,15 +9,30 @@
       <v-img src="/assets/img//core//logo.svg" width="200"></v-img>
     </v-app-bar-title> -->
     <div class="mx-4 d-none d-sm-none d-md-flex d-lg-flex">
-      <v-btn variant="text" class="mr-1" to="/speakers" size="small" rounded>Speakers</v-btn>
-      <v-btn variant="text" class="mr-1" to="/schedule" size="small" rounded>Schedule</v-btn>
-      <v-btn variant="text" class="mr-1" to="/badge" size="small" rounded>Badge</v-btn>
-      <v-btn variant="text" class="mr-1" to="/team" size="small" rounded>Team</v-btn>
-      <v-btn variant="text" class="mr-1" to="/faq" size="small" rounded>FAQ</v-btn>
+      <v-btn variant="text" class="mr-1" to="/speakers" size="small" rounded
+        >Speakers</v-btn
+      >
+      <v-btn variant="text" class="mr-1" to="/schedule" size="small" rounded
+        >Schedule</v-btn
+      >
+      <v-btn variant="text" class="mr-1" to="/badge" size="small" rounded
+        >Badge</v-btn
+      >
+      <v-btn variant="text" class="mr-1" to="/team" size="small" rounded
+        >Team</v-btn
+      >
+      <v-btn variant="text" class="mr-1" to="/faq" size="small" rounded
+        >FAQ</v-btn
+      >
     </div>
     <v-spacer></v-spacer>
     <v-btn
       rounded
+      v-if="
+        configData.eventInfo.registeration.link.length &&
+        new Date(configData.eventInfo.registeration.end_date) << new Date()
+      "
+      :href="configData.eventInfo.registeration.link.length"
       class="action_btn d-md-flex d-lg-flex d-sm-flex d-none"
       :size="screenWidth < 400 ? 'x-small' : 'small'"
       >Register Now</v-btn
@@ -33,10 +48,13 @@
 
 <script setup>
 import { useDisplay } from "vuetify";
+import configData from "../assets/data/config.json";
 const { width, mobile } = useDisplay();
 const sidebar = useSideBar();
 const screenWidth = ref(0);
+const configDataSet = ref([]);
 
+configDataSet.value = configData;
 screenWidth.value = width;
 
 const drawerAction = () => {

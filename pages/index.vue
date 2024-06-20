@@ -9,19 +9,41 @@
           class="order-md-1 order-sm-1 order-2 py-15"
         >
           <h3 class="text-h3 font-weight-medium">Google I/O Extended</h3>
+          <p style="font-weight: 600">
+            {{ configDataSet.communityLocation.city }}
+          </p>
           <p class="mb-4 mt-2">
-            Google I/O Extended brings the excitement of Google I/O directly to
-            your community.
+           {{configDataSet.eventInfo.description.short}}
           </p>
 
           <p>
             <span class="mr-4"
-              ><v-icon>mdi-calendar-month</v-icon> July 23, 2024</span
+              ><v-icon>mdi-calendar-month</v-icon>
+              {{ configData.eventInfo.date }}</span
             >
-            <span><v-icon>mdi-map-legend</v-icon> Location</span>
+            <span
+              ><v-icon>mdi-map-legend</v-icon>
+              <a
+                style="text-decoration: none; color: #2987f6"
+                :href="configDataSet.eventInfo.venue.map_link"
+                >{{ configData.eventInfo.venue.address }}</a
+              >
+            </span>
           </p>
 
-          <v-btn class="mt-4 mb-5 action_btn" rounded>Register Now</v-btn>
+          <v-btn
+            class="my-5 action_btn"
+            v-if="
+              configData.eventInfo.registeration.link.length &&
+              new Date(configData.eventInfo.registeration.end_date) <<
+                new Date()
+            "
+            size="large"
+            :href="configData.eventInfo.registeration.link.length"
+            target="_blank"
+            rounded
+            >Register Now</v-btn
+          >
         </v-col>
         <v-col
           md="5"
@@ -43,19 +65,16 @@
         "
         class="pa-3 mx-1"
       >
-        <v-col md="4" cols="12">
+        <v-col md="5" cols="12">
           <h1 class="text-h3 mb-3" style="line-height: 45px">
             Occuring in the <br />
             near future
           </h1>
-          <p style="font-size: 90%">
-            Google I/O Extended brings the excitement of Google I/O directly to
-            your community. Join local I/O watch parties and meetups for the
-            latest developer updates, technical talks from experts, networking,
-            and hands-on learning.
+          <p style="font-size: 95%">
+            {{configDataSet.eventInfo.description.long}}
           </p>
         </v-col>
-        <v-col md="8" cols="12">
+        <v-col md="7" cols="12">
           <v-container fluid class="pa-0">
             <v-row>
               <v-col
@@ -170,6 +189,7 @@
           <v-img
             class="mt-10"
             src="https://io.google/2024/app/images/io24-see-you-next-year.svg"
+            lazy-src="https://io.google/2024/app/images/io24-see-you-next-year.svg"
           ></v-img>
         </v-col>
       </v-row>
@@ -199,23 +219,31 @@ whatToExpect.value = configDataSet.value.eventInfo.whatToExpect;
 
 useSeoMeta({
   contentType: "text/html; charset=utf-8",
-  title: configDataSet.value.eventInfo.name + ' | '+configDataSet.value.communityName,
+  title:
+    configDataSet.value.eventInfo.name +
+    " | " +
+    configDataSet.value.communityName,
   description: configDataSet.value.eventInfo.description.short,
   keywords: configDataSet.value.seo.keywords,
   author: "OSS Labs",
   creator: "OSS Labs",
   viewport: "width=device-width, initial-scale=1.0",
-  ogTitle: configDataSet.value.eventInfo.name + ' | '+configDataSet.value.communityName,
+  ogTitle:
+    configDataSet.value.eventInfo.name +
+    " | " +
+    configDataSet.value.communityName,
   ogDescription: configDataSet.value.eventInfo.description.short,
   ogImage: `${configDataSet.value.seo.hostUrl}/thumbnail.png?auto=format&fit=crop&frame=1&h=512&w=1024`,
   ogUrl: configDataSet.value.seo.hostUrl,
   ogType: "website",
-  twitterTitle: configDataSet.value.eventInfo.name + ' | '+configDataSet.value.communityName,
+  twitterTitle:
+    configDataSet.value.eventInfo.name +
+    " | " +
+    configDataSet.value.communityName,
   twitterDescription: configDataSet.value.eventInfo.description.short,
   twitterImage: `${configDataSet.value.seo.hostUrl}thumbnail.png?auto=format&fit=crop&frame=1&h=512&w=1024`,
   twitterCard: "summary_large_image",
 });
-
 </script>
 
 <style scoped>

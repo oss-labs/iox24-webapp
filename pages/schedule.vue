@@ -4,7 +4,7 @@
       <v-row justify="start" align="start">
         <v-col md="9" sm="9" cols="12" class="order-md-1 order-sm-1 order-2">
           <h2 class="text-h3">Schedule</h2>
-          <p>Learn about the Experts presenting at Google I/O Extended.</p>
+          <p>Follow code demonstrations by our expert speakers on different tracks. Check out the schedule below and don't forget to mark your calendar so that you don't miss out on any sessions.</p>
           <br />
           <v-container fluid class="mt-3">
             <v-row v-for="(item, index) in schData" :key="index" style="border-bottom: 1px solid black;">

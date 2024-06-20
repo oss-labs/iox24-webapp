@@ -2,17 +2,18 @@
   <NuxtLayout>
     <v-app>
       <CoreAppToolbar />
-      <CoreAppDrawer/>
+      <CoreAppDrawer />
       <v-main class="pa-0">
-        <CoreAppBanner />
+        <CoreAppBanner
+          v-if="
+            configData.eventInfo.registeration.link.length &&
+            new Date(configData.eventInfo.registeration.end_date) << new Date()
+          "
+        />
         <v-container fluid>
           <v-row justify="center" align="start">
             <v-col md="11" lg="10">
-              <v-slide-y-reverse-transition>
-                <div v-show="show">
-                  <NuxtPage />
-                </div>
-              </v-slide-y-reverse-transition>
+              <NuxtPage />
             </v-col>
           </v-row>
         </v-container>
@@ -22,13 +23,8 @@
   </NuxtLayout>
 </template>
 
-<script>
-export default {
-  data: () => ({
-    show: false,
-  }),
-  created() {
-    this.show = true;
-  },
-};
+<script setup>
+import configData from "../assets/data/config.json";
+const configDataSet = ref([]);
+configDataSet.value = configData;
 </script>

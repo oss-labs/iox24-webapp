@@ -4,7 +4,7 @@
       <v-row justify="start" align="start">
         <v-col md="12" cols="12">
           <h2 class="text-h3">Meet the Team</h2>
-          <p>Learn about the Experts presenting at Google I/O Extended.</p>
+          <p>Whatever your challenge, these leaders on the front line of transformation, innovation, and exploration helped solve it with you.</p>
         </v-col>
       </v-row>
 

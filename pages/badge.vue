@@ -20,7 +20,7 @@
           <div class="d-none d-sm-none d-md-block mb-10">
             <p class="text-h3 mb-4">Badges</p>
 
-            <p class="google-font" style="font-size: 18px">
+            <p class="google-font">
               Upload an image and generate a personalised badge with the Google
               IO Extended frame. Also share your image using #IOExtended on
               different social platforms.
