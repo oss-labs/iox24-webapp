@@ -44,26 +44,34 @@
 
 <script setup>
 import teamJSONData from "../assets/data/team.json";
+import configData from "../assets/data/config.json";
+const configDataSet = ref([]);
+configDataSet.value = configData;
 
 const teamData = ref([]);
 teamData.value = teamJSONData;
+
+
+
+useSeoMeta({
+  contentType: "text/html; charset=utf-8",
+  title: 'Team - '+configDataSet.value.eventInfo.name + ' | '+configDataSet.value.communityName,
+  description: configDataSet.value.eventInfo.description.short,
+  keywords: configDataSet.value.seo.keywords,
+  author: "OSS Labs",
+  creator: "OSS Labs",
+  viewport: "width=device-width, initial-scale=1.0",
+  ogTitle: 'Team - '+configDataSet.value.eventInfo.name + ' | '+configDataSet.value.communityName,
+  ogDescription: configDataSet.value.eventInfo.description.short,
+  ogImage: `${configDataSet.value.seo.hostUrl}/thumbnail.png?auto=format&fit=crop&frame=1&h=512&w=1024`,
+  ogUrl: configDataSet.value.seo.hostUrl,
+  ogType: "website",
+  twitterTitle: 'Team - '+configDataSet.value.eventInfo.name + ' | '+configDataSet.value.communityName,
+  twitterDescription: configDataSet.value.eventInfo.description.short,
+  twitterImage: `${configDataSet.value.seo.hostUrl}thumbnail.png?auto=format&fit=crop&frame=1&h=512&w=1024`,
+  twitterCard: "summary_large_image",
+});
 </script>
 
 <style scoped>
-.content-box {
-  /* background-color: #eeeeee;
-  border: 1.8px solid black;
-  border-radius: 1rem;
-  z-index: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
-}
-.cards {
-  /* display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 2px;
-  margin-top: 4rem; */
-}
 </style>

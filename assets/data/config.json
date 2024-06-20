@@ -63,5 +63,9 @@
                 "img": "https://services.google.com/fh/files/events/ioconnectconnect.png"
             }
         ]
+    },
+    "seo":{
+        "keywords": "GDG, IO Extended, Google IO",
+        "hostUrl": ""
     }
 }

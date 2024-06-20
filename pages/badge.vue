@@ -16,10 +16,7 @@
 
       <!-- Desktop -->
       <v-row class="mb-md-10" justify="center" align="center">
-        <v-col
-          md="7"
-          class="order-md-1 order-sm-2 order-2  mt-3 px-0 mb-md-13"
-        >
+        <v-col md="7" class="order-md-1 order-sm-2 order-2 mt-3 px-0 mb-md-13">
           <div class="d-none d-sm-none d-md-block mb-10">
             <p class="text-h3 mb-4">Badges</p>
 
@@ -116,6 +113,7 @@
 
 <script>
 import gdgImage from "@/assets/img/badge.png";
+import configData from "../assets/data/config.json";
 
 export default {
   name: "BadgeComponent",
@@ -128,9 +126,6 @@ export default {
     ctx: null,
     banner: null,
   }),
-  created() {
-    document.title = "Badges | DevFest India 2024";
-  },
   methods: {
     upload(e) {
       if (e && e.target.files && e.target.files[0]) {
@@ -251,7 +246,7 @@ export default {
     download() {
       const a = document.createElement("a");
       const url = this.canvas.toDataURL("image/png;base64");
-      a.download = "#DevFestIndia_badge.png";
+      a.download = "#IOExtended_badge.png";
       a.href = url;
       a.click();
     },
@@ -273,6 +268,40 @@ export default {
     this.banner.onerror = (error) => {
       console.error("Error loading banner", error);
     };
+  },
+  setup() {
+    const configDataSet = ref([]);
+    configDataSet.value = configData;
+    useSeoMeta({
+      contentType: "text/html; charset=utf-8",
+      title:
+        "Badge - " +
+        configDataSet.value.eventInfo.name +
+        " | " +
+        configDataSet.value.communityName,
+      description: configDataSet.value.eventInfo.description.short,
+      keywords: configDataSet.value.seo.keywords,
+      author: "OSS Labs",
+      creator: "OSS Labs",
+      viewport: "width=device-width, initial-scale=1.0",
+      ogTitle:
+        "Badge - " +
+        configDataSet.value.eventInfo.name +
+        " | " +
+        configDataSet.value.communityName,
+      ogDescription: configDataSet.value.eventInfo.description.short,
+      ogImage: `${configDataSet.value.seo.hostUrl}/thumbnail.png?auto=format&fit=crop&frame=1&h=512&w=1024`,
+      ogUrl: configDataSet.value.seo.hostUrl,
+      ogType: "website",
+      twitterTitle:
+        "Badge - " +
+        configDataSet.value.eventInfo.name +
+        " | " +
+        configDataSet.value.communityName,
+      twitterDescription: configDataSet.value.eventInfo.description.short,
+      twitterImage: `${configDataSet.value.seo.hostUrl}thumbnail.png?auto=format&fit=crop&frame=1&h=512&w=1024`,
+      twitterCard: "summary_large_image",
+    });
   },
 };
 </script>
