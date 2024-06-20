@@ -60,8 +60,8 @@ export default {};
 </script>
 
 <style>
-/* .footer {
+.footer {
   position: absolute;
   bottom: 0;
-} */
+}
 </style>

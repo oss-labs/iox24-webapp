@@ -102,7 +102,7 @@
           class="text-center py-md-10 py-5 order-md-2 order-sm-1 order-1"
           style="background: #eeeeee; border-radius: 18px"
         >
-          <canvas id="badgeCanvas" class=""></canvas>
+          <canvas class=""></canvas>
           <br /><br />
           <v-btn
             class="pb-0 mb-0 action_download_btn"
@@ -193,7 +193,7 @@ export default {
             this.canvas.height = 2500;
             const hRatio = this.canvas.width / this.image.width;
             const vRatio = this.canvas.height / this.image.height;
-            const ratio = Math.min(hRatio, vRatio);
+            const ratio = Math.max(hRatio, vRatio);
             const x = (this.canvas.width - this.image.width * ratio) / 2;
             const y = (this.canvas.height - this.image.height * ratio) / 2;
             console.log(`Drawing image at (${x}, ${y}) with ratio ${ratio}`);
@@ -262,7 +262,7 @@ export default {
     },
   },
   mounted() {
-    this.canvas = document.querySelector("#badgeCanvas");
+    this.canvas = document.querySelector("canvas");
     this.ctx = this.canvas.getContext("2d");
     this.image = "";
     this.shape = "original";
