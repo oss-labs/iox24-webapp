@@ -20,7 +20,7 @@
                 v-for="(item, index) in teamData"
                 :key="index"
               >
-                <CommonSpeakerCard :data="item" />
+                <CommonTeamCard :data="item" />
               </v-col>
             </v-row>
           </v-container>

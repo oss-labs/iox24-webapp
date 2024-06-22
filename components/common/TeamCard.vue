@@ -1,39 +1,24 @@
 <template>
   <v-dialog max-width="700">
     <template v-slot:activator="{ props: activatorProps }">
-      <div
-        v-bind="activatorProps"
-        style="cursor: pointer"
-        class="image-container"
-      >
-        <v-responsive :aspect-ratio="1 / 1">
+      <div v-bind="activatorProps" style="cursor: pointer" class="text-center">
+        <v-avatar size="120">
           <v-img
-            src="/assets/img/speakers/a.jpg"
-            alt="Top Image"
-            class="top-image"
-            height="80%"
-            width="100%"
-            cover
-            lazy-src="https://io.google/2024/app/images/cs_program.webp"
+            :src="`/team/${data.image}`"
+            aspect-ratio="1/1"
+            :lazy-src="`/team/${data.image}`"
             style="border-radius: 20px"
           ></v-img>
-        </v-responsive>
-        <v-responsive :aspect-ratio="1 / 1">
-          <v-img
-            src="/assets/img/speakers/frame3.svg"
-            alt="Bottom Image"
-            class="bottom-image"
-            cover
-            lazy-src="https://io.google/2024/app/images/cs_program.webp"
-            style="border-radius: 20px"
-          ></v-img>
-        </v-responsive>
-      </div>
-      <div class="info">
-        <p class="mt-4" style="font-size: 120%; font-weight: 600">
-          {{ data.name }}
-        </p>
-        <p>{{ data.meta.designation }}, {{ data.meta.company }}</p>
+        </v-avatar>
+
+        <div class="mt-3">
+          <p class="mt-0 mb-0" style="font-size: 110%; font-weight: 600">
+            {{ data.name }}
+          </p>
+          <p style="font-size: 90%">
+            {{ data.meta.designation }}, {{ data.meta.company }}
+          </p>
+        </div>
       </div>
     </template>
 
@@ -67,37 +52,4 @@ export default {
 </script>
 
 <style scoped>
-.image-container {
-  position: relative;
-  width: 100%;
-  height: 200px; /* Adjust height as needed */
-}
-.v-responsive {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.image-container .v-img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.bottom-image {
-  z-index: 3;
-  transform: translate(0px, -2px);
-}
-
-.top-image {
-  z-index: 4;
-}
-
-.info {
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 5rem;
-}
 </style>

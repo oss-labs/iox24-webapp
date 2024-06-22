@@ -5,9 +5,9 @@
         <!-- {{ '/assets/img/speakers/'+data.image }} -->
         <v-avatar size="120">
           <v-img
-            :src="`/img/speakers/${data.image}`"
+            :src="`/speakers/${data.image}`"
             aspect-ratio="1/1"
-            :lazy-src="`/img/speakers/${data.image}`"
+            :lazy-src="`/speakers/${data.image}`"
             style="border-radius: 20px"
           ></v-img>
         </v-avatar>
