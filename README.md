@@ -65,7 +65,7 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 Awesome! Contributions of all kinds are greatly appreciated. To help smoothen the process we have a few non-exhaustive guidelines to follow which should get you going in no time.
 
 ## LICENSE
-Check out the developer [LICENSE](https://github.com/vrijraj/devfest-website-2023/blob/main/LICENSE)
+Check out the developer [LICENSE](https://github.com/oss-labs/iox24-webapp/blob/main/LICENSE)
 
 ## Facing Any Problem or need any Help?
-Write us in [issues](https://github.com/vrijraj/devfest-website-2023/issues) section. Our team will try solve your issue within 10-12 hours.<be>
+Write us in the [issues](https://github.com/vrijraj/oss-labs/iox24-webapp/issues) section. Our team will try to solve your issue within 10-12 hours.<be>
