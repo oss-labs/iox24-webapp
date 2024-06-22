@@ -13,7 +13,7 @@
             {{ configDataSet.communityLocation.city }}
           </p>
           <p class="mb-4 mt-2">
-           {{configDataSet.eventInfo.description.short}}
+            {{ configDataSet.eventInfo.description.short }}
           </p>
 
           <p>
@@ -71,7 +71,7 @@
             near future
           </h1>
           <p style="font-size: 95%">
-            {{configDataSet.eventInfo.description.long}}
+            {{ configDataSet.eventInfo.description.long }}
           </p>
         </v-col>
         <v-col md="7" cols="12">
@@ -91,10 +91,10 @@
                   class="d-flex"
                 >
                   <div
-                    class="mt-5 mt-md-12 mx-md-4 mx-1 text-center align-center"
+                    class="mt-5 mt-md-12 mx-md-4 mx-1 text-center align-center img-content"
                   >
                     <p
-                      :style="{ fontSize: screenWidth > 450 ? '350%' : '200%' }"
+                      :style="{ fontSize: screenWidth > 450 ? '350%' : '180%' }"
                     >
                       {{ item.value }}
                     </p>
@@ -166,8 +166,8 @@
               >
                 {{ item.question }}
               </v-expansion-panel-title>
-              <v-expansion-panel-text  class="pa-3">
-                <div v-html="item.answer" ></div>
+              <v-expansion-panel-text class="pa-3">
+                <div v-html="item.answer"></div>
               </v-expansion-panel-text>
             </v-expansion-panel>
           </v-expansion-panels>
@@ -255,5 +255,19 @@ useSeoMeta({
   /* color: #000; */
   box-shadow: none;
   border: 0px solid black;
+}
+@media screen and (max-width: 1440px) {
+  .mt-md-12 {
+    margin-top: 0px !important;
+  }
+  .img-content p:first-child {
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .mx-md-4 {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
 }
 </style>
