@@ -10,6 +10,7 @@
               configData.eventInfo.registeration.link.length &&
               new Date(configData.eventInfo.registeration.end_date) > new Date()
           "
+          :link="configData.eventInfo.registeration.link"
         />
         <v-container fluid class="flex-grow-1">
           <v-row justify="center" align="start">

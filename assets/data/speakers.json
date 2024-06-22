@@ -1,15 +1,15 @@
 [
   {
     "id": "101",
-    "name": "Full Name",
+    "name": "Vrijraj Singh",
     "image": "default.jpg",
     "social": {
-      "linkedin": "a",
-      "twitter": "b",
-      "github": "c",
-      "web": "d"
+      "linkedin": "https://www.linkedin.com/in/vrijrajsingh/",
+      "twitter": "https://twitter.com/SVrijraj",
+      "github": "https://github.com/vrijraj",
+      "web": "https://vrijraj.xyz/"
     },
-    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.z",
+    "bio": "Vrijraj is a dedicated CTO at agprop and a passionate advocate for community engagement. He actively contributes to the TechFerment community and holds the esteemed title of Google Developers Expert for Firebase and Web Technologies. With a wealth of experience, he has conducted over 300 talks and workshops, sharing his knowledge with various communities. Vrijraj's expertise lies in Web development, Firebase, Google Cloud Platform, and UI/UX Design. He possesses a strong drive for learning new technologies and leveraging them to build innovative solutions. Alongside his professional endeavors, Vrijraj takes pleasure in mentoring individuals and nurturing communities. During his leisure time, he indulges in his love for food and enjoys watching YouTube videos.",
     "meta": {
       "company": "Company",
       "designation": "Designation"

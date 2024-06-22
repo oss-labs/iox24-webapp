@@ -66,6 +66,7 @@
       :href="configData.eventInfo.registeration.link"
       class="action_btn d-md-flex d-lg-flex d-sm-flex d-none"
       :size="screenWidth < 400 ? 'x-small' : 'small'"
+      target="_blank"
       >Register Now</v-btn
     >
     <v-app-bar-nav-icon

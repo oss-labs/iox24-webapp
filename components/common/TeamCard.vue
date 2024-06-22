@@ -18,6 +18,7 @@
           <p style="font-size: 90%">
             {{ data.meta.designation }}, {{ data.meta.company }}
           </p>
+          <CommonSocialBtn :links="data.social" />
         </div>
       </div>
     </template>

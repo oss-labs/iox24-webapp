@@ -1,10 +1,10 @@
 {
-    "communityName": "GDG Baku",
+    "communityName": "GDG Name",
     "communityLocation": {
-        "country": "Azerbaijan",
-        "city": "Baku"
+        "country": "India",
+        "city": "City"
     },
-    "communityDescription": "GDG Baku is an independent group; our activities and the opinions expressed here should in no way be linked to Google, the corporation.",
+    "communityDescription": "GDG is an independent group; our activities and the opinions expressed here should in no way be linked to Google, the corporation.",
     "communityLinks": {
         "page": "https://gdg.community.dev/gdg-baku/",
         "website": "https://gdgbaku.az/",
@@ -17,11 +17,11 @@
         "date": "July 27, 2024",
         "time": "9 AM - 5 PM IST",
         "venue": {
-            "address": "Somewhere",
+            "address": "Location",
             "map_link": "https://maps.app.goo.gl/Cm6gXgpugNw74ow6A"
         },
         "registeration": {
-            "link": "https://gdgbaku.az/",
+            "link": "https://gdg.community.dev/",
             "end_date": "2024-07-15"
         },
         "description": {
@@ -64,7 +64,7 @@
             }
         ]
     },
-    "seo":{
+    "seo": {
         "keywords": "GDG, IO Extended, Google IO",
         "hostUrl": "https://iox-website.web.app"
     }

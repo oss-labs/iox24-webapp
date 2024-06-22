@@ -36,8 +36,8 @@
               line-height: 1;
             "
             class="mb-0"
-            >Developed by <br />
-            Open Sources Labs</a
+            ><span class="mb-n2">Developed by</span> <br />
+            <span class="mt-n2">Open Sources Labs</span></a
           >
         </v-col>
       </v-row>
