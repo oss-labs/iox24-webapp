@@ -2,21 +2,23 @@
   <v-dialog max-width="700">
     <template v-slot:activator="{ props: activatorProps }">
       <div v-bind="activatorProps" style="cursor: pointer" class="text-center">
+        <!-- {{ '/assets/img/speakers/'+data.image }} -->
         <v-avatar size="120">
           <v-img
-          src="/assets/img/speakers/a.jpg"
-          aspect-ratio="1/1"
-          class="bg-green"
-          lazy-src="/assets/img/speakers/a.jpg"
-          style="border-radius: 20px"
-        ></v-img>
+            :src="`/img/speakers/${data.image}`"
+            aspect-ratio="1/1"
+            :lazy-src="`/img/speakers/${data.image}`"
+            style="border-radius: 20px"
+          ></v-img>
         </v-avatar>
-        
+
         <div class="mt-3">
           <p class="mt-0 mb-0" style="font-size: 110%; font-weight: 600">
             {{ data.name }}
           </p>
-          <p style="font-size: 90%;">{{ data.meta.designation }}, {{ data.meta.company }}</p>
+          <p style="font-size: 90%">
+            {{ data.meta.designation }}, {{ data.meta.company }}
+          </p>
         </div>
       </div>
     </template>
@@ -51,5 +53,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

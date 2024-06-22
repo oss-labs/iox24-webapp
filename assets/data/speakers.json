@@ -2,7 +2,7 @@
   {
     "id": "101",
     "name": "Full Name",
-    "image": "abc.webp",
+    "image": "default.jpg",
     "social": {
       "linkedin": "a",
       "twitter": "b",
@@ -18,7 +18,7 @@
   {
     "id": "102",
     "name": "Full Name",
-    "image": "abc.webp",
+    "image": "default.jpg",
     "social": {
       "linkedin": "a",
       "twitter": "b",
@@ -34,7 +34,7 @@
   {
     "id": "103",
     "name": "Full Name",
-    "image": "abc.webp",
+    "image": "default.jpg",
     "social": {
       "linkedin": "a",
       "twitter": "b",
@@ -50,7 +50,7 @@
   {
     "id": "104",
     "name": "Full Name",
-    "image": "abc.webp",
+    "image": "default.jpg",
     "social": {
       "linkedin": "a",
       "twitter": "b",
@@ -66,7 +66,7 @@
   {
     "id": "105",
     "name": "Full Name",
-    "image": "abc.webp",
+    "image": "default.jpg",
     "social": {
       "linkedin": "a",
       "twitter": "b",
