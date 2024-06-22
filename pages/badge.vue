@@ -133,7 +133,6 @@ export default {
         reader.onload = (event) => {
           const img = new Image();
           img.onload = () => {
-            console.log("Image loaded successfully", img);
             this.image = img;
             this.draw();
           };
@@ -159,17 +158,14 @@ export default {
     },
     draw() {
       if (!this.canvas || !this.ctx) {
-        console.error("Canvas or context is not initialized");
         return;
       }
-      console.log("Drawing image with shape:", this.shape);
 
       this.canvas.width = 2500;
       this.canvas.height = 2500;
 
       this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
       if (this.image) {
-        console.log("Drawing image:", this.image);
 
         switch (this.shape) {
           case "original": {
@@ -186,7 +182,6 @@ export default {
             const ratio = Math.max(hRatio, vRatio);
             const x = (this.canvas.width - this.image.width * ratio) / 2;
             const y = (this.canvas.height - this.image.height * ratio) / 2;
-            console.log(`Drawing image at (${x}, ${y}) with ratio ${ratio}`);
 
             this.ctx.drawImage(
               this.image,
@@ -203,7 +198,6 @@ export default {
           }
         }
       } else {
-        console.log("No image to draw");
 
         this.ctx.fillStyle = "#fff";
         this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
@@ -260,13 +254,10 @@ export default {
     document.getElementById("download").style.visibility = "hidden";
     this.banner = new Image();
     this.banner.src = gdgImage;
-    console.log(this.banner);
     this.banner.onload = () => {
-      console.log("Banner loaded successfully");
       this.draw();
     };
     this.banner.onerror = (error) => {
-      console.error("Error loading banner", error);
     };
   },
   setup() {

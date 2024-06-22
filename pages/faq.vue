@@ -1,6 +1,6 @@
 <template>
   <v-main class="pa-0 ma-0">
-    <v-container fluid class="">
+    <v-container fluid class="px-0">
       <v-row align="start">
         <v-col md="9" sm="9" cols="12" class="order-md-1 order-sm-1 order-2">
           <h2 class="text-h3">Frequently asked questions</h2>
