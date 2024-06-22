@@ -27,7 +27,7 @@
         </v-col>
         <v-col md="2" lg="2" sm="12" cols="12" style="color: #9aa09e">
           <a
-            href="https://gdg.community.dev/participation-terms/"
+            href="https://github.com/oss-labs"
             target="_blank"
             style="
               color: #9aa09e;
