@@ -30,13 +30,13 @@
               >
             </span>
           </p>
-
+         
           <v-btn
             class="my-5 action_btn"
             v-if="
+              configData &&
               configData.eventInfo.registeration.link.length &&
-              new Date(configData.eventInfo.registeration.end_date) <<
-                new Date()
+              new Date(configData.eventInfo.registeration.end_date) > new Date()
             "
             size="large"
             :href="configData.eventInfo.registeration.link"
@@ -158,7 +158,10 @@
             <v-expansion-panel
               v-for="(item, index) in faqDataSet"
               :key="index"
-              :style="{ borderBottom: index+1 < faqDataSet.length ? '1px solid black' : '' }"
+              :style="{
+                borderBottom:
+                  index + 1 < faqDataSet.length ? '1px solid black' : '',
+              }"
             >
               <v-expansion-panel-title
                 expand-icon="mdi-menu-down"

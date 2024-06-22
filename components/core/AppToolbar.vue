@@ -9,19 +9,49 @@
       <v-img src="/assets/img//core//logo.svg" width="200"></v-img>
     </v-app-bar-title> -->
     <div class="mx-4 d-none d-sm-none d-md-flex d-lg-flex">
-      <v-btn variant="text" @click="appLoading=true" class="mr-1" to="/speakers" size="small" rounded
+      <v-btn
+        variant="text"
+        @click="appLoading = true"
+        class="mr-1"
+        to="/speakers"
+        size="small"
+        rounded
         >Speakers</v-btn
       >
-      <v-btn variant="text" @click="appLoading=true" class="mr-1" to="/schedule" size="small" rounded
+      <v-btn
+        variant="text"
+        @click="appLoading = true"
+        class="mr-1"
+        to="/schedule"
+        size="small"
+        rounded
         >Schedule</v-btn
       >
-      <v-btn variant="text" @click="appLoading=true" class="mr-1" to="/badge" size="small" rounded
+      <v-btn
+        variant="text"
+        @click="appLoading = true"
+        class="mr-1"
+        to="/badge"
+        size="small"
+        rounded
         >Badge</v-btn
       >
-      <v-btn variant="text" @click="appLoading=true" class="mr-1" to="/team" size="small" rounded
+      <v-btn
+        variant="text"
+        @click="appLoading = true"
+        class="mr-1"
+        to="/team"
+        size="small"
+        rounded
         >Team</v-btn
       >
-      <v-btn variant="text" @click="appLoading=true" class="mr-1" to="/faq" size="small" rounded
+      <v-btn
+        variant="text"
+        @click="appLoading = true"
+        class="mr-1"
+        to="/faq"
+        size="small"
+        rounded
         >FAQ</v-btn
       >
     </div>
@@ -29,8 +59,9 @@
     <v-btn
       rounded
       v-if="
+        configData &&
         configData.eventInfo.registeration.link.length &&
-        new Date(configData.eventInfo.registeration.end_date) << new Date()
+        new Date(configData.eventInfo.registeration.end_date) > new Date()
       "
       :href="configData.eventInfo.registeration.link"
       class="action_btn d-md-flex d-lg-flex d-sm-flex d-none"
