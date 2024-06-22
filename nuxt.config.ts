@@ -11,6 +11,7 @@ export default defineNuxtConfig({
         config.plugins.push(vuetify({ autoImport: true }));
       });
     },
+    'nuxt-gtag'
     //...
   ],
   vite: {
@@ -20,4 +21,7 @@ export default defineNuxtConfig({
       },
     },
   },
+  gtag: {
+    id: 'G-RKRFJ51E3L'
+  }
 });
