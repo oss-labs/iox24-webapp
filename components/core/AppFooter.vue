@@ -2,7 +2,6 @@
   <v-main class="pa-0">
     <v-container
       fluid
-      class="footer"
       style="background-color: #202124; color: white !important"
     >
       <v-row justify="center" align="center">
@@ -30,7 +29,12 @@
           <a
             href="https://gdg.community.dev/participation-terms/"
             target="_blank"
-            style="color: #9aa09e; text-decoration: none; font-size: 80%;line-height: 1;"
+            style="
+              color: #9aa09e;
+              text-decoration: none;
+              font-size: 80%;
+              line-height: 1;
+            "
             class="mb-0"
             >Developed by <br />
             Open Sources Labs</a
@@ -40,6 +44,3 @@
     </v-container>
   </v-main>
 </template>
-
-<script setup>
-</script>
