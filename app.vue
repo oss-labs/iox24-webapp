@@ -3,13 +3,13 @@
     <v-app>
       <CoreAppToolbar />
       <CoreAppDrawer />
-      <v-main class="pa-0" style="min-height: 100vh">
-        <CoreAppBanner
+      <v-main class="" style="min-height: 100vh">
+        <!-- <CoreAppBanner
           v-if="
             configData.eventInfo.registeration.link.length &&
             new Date(configData.eventInfo.registeration.end_date) << new Date()
           "
-        />
+        /> -->
         <v-container fluid class="flex-grow-1">
           <v-row justify="center" align="start">
             <v-col md="11" lg="10">
