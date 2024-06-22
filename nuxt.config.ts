@@ -1,13 +1,6 @@
 import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
 export default defineNuxtConfig({
-  // app: {
-  //   pageTransition: {
-  //     name: 'page',
-  //     mode: 'out-in' // or 'in-out'
-  //   }
-  // },
-  //...
-
+  css: ['~/assets/main.css'],
   build: {
     transpile: ["vuetify"],
   },

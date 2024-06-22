@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout id="app">
-    <v-app>
+    <v-app class="google-font">
       <CoreAppToolbar />
       <CoreAppDrawer />
       <v-main class="" style="min-height: 100vh">

@@ -1,11 +1,9 @@
-.page-enter-active,
-.page-leave-active {
-  transition: opacity 0.5s ease;
+@font-face {
+  font-family: "google-sans";
+  src: url('./fonts/google-font.woff2') format("woff2");
+  font-display: swap;
 }
 
-.page-enter,
-.page-leave-to
-
-/* .page-leave-active in <2.1.8 */ {
-  opacity: 0;
+.google-font {
+  font-family: "google-sans", Helvetica, Arial, Sans-Serif
 }
