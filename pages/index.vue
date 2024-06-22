@@ -158,7 +158,7 @@
             <v-expansion-panel
               v-for="(item, index) in faqDataSet"
               :key="index"
-              :style="{ borderBottom: index != 3 ? '1px solid black' : '' }"
+              :style="{ borderBottom: index+1 < faqDataSet.length ? '1px solid black' : '' }"
             >
               <v-expansion-panel-title
                 expand-icon="mdi-menu-down"
