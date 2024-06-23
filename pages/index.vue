@@ -30,7 +30,7 @@
               >
             </span>
           </p>
-         
+
           <v-btn
             class="my-5 action_btn"
             v-if="
@@ -174,6 +174,21 @@
               </v-expansion-panel-text>
             </v-expansion-panel>
           </v-expansion-panels>
+        </v-col>
+      </v-row>
+
+      <v-row>
+        <v-col md="12">
+          <p
+            class="google-font gdg-h1 mb-2 grey--text text--darken-4"
+            style="font-size: 220%"
+          >
+            Our Partners
+          </p>
+          <p class="mb-0">
+            Partners dedicated to building remarkable experience!
+          </p>
+          <CommonPartner/>
         </v-col>
       </v-row>
 
