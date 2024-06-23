@@ -30,7 +30,7 @@
               >
             </span>
           </p>
-         
+
           <v-btn
             class="my-5 action_btn"
             v-if="
@@ -177,6 +177,8 @@
         </v-col>
       </v-row>
 
+      <indexPartner class="mt-10" />
+
       <v-row
         class="mt-10 mx-1 mb-10"
         style="
@@ -206,6 +208,7 @@
 import { useDisplay } from "vuetify";
 import configData from "../assets/data/config.json";
 import faqData from "../assets/data/faq.json";
+import indexPartner from "@/components/index/indexPartner.vue";
 
 const { width, mobile } = useDisplay();
 
