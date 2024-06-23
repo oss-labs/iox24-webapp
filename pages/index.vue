@@ -177,7 +177,20 @@
         </v-col>
       </v-row>
 
-      <indexPartner class="mt-10" />
+      <v-row>
+        <v-col md="12">
+          <p
+            class="google-font gdg-h1 mb-2 grey--text text--darken-4"
+            style="font-size: 220%"
+          >
+            Our Partners
+          </p>
+          <p class="mb-0">
+            Partners dedicated to building remarkable experience!
+          </p>
+          <CommonPartner/>
+        </v-col>
+      </v-row>
 
       <v-row
         class="mt-10 mx-1 mb-10"
@@ -208,7 +221,6 @@
 import { useDisplay } from "vuetify";
 import configData from "../assets/data/config.json";
 import faqData from "../assets/data/faq.json";
-import indexPartner from "@/components/index/indexPartner.vue";
 
 const { width, mobile } = useDisplay();
 
